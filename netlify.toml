@@ -5,5 +5,5 @@
 
 [[redirects]]
   from = "/style.css"
-  to = "/client/style.css"
+  to = "/style.css"
   status = 200
