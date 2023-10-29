@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "node20": "node --watch --env-file .\\.env .\\server\\index.js"
+    "start": "node --watch --env-file .\\.env .\\app.js"
   },
   "devDependencies": {
     "morgan": "1.10.0"

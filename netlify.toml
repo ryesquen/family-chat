@@ -1,9 +1,3 @@
-[build]
-  command = "pnpm run build"
-
-[dev]
-  command = "pnpm run node20"
-
 [[redirects]]
   from = "/*"
   to = "/client/index.html"
