@@ -4,6 +4,6 @@
   status = 200
 
 [[redirects]]
-  from = "/client/style.css"
+  from = "/style.css"
   to = "/client/style.css"
   status = 200
