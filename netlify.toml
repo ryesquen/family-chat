@@ -2,3 +2,8 @@
   from = "/*"
   to = "/client/index.html"
   status = 200
+
+[[redirects]]
+  from = "/client/style.css"
+  to = "/client/style.css"
+  status = 200
