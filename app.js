@@ -27,7 +27,7 @@ io.on('connection', (socket) => {
 
 app.use(looger('dev'))
 
-app.use(express.static(path.join(process.cwd(), 'client')))
+app.use(express.static(path.join(process.cwd(), './client/')))
 
 httpServer.listen(PORT, () => {
   console.log(`Server running on PORT ==> ${PORT}`)
