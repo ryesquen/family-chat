@@ -1,6 +1,7 @@
 import express from 'express'
 import looger from 'morgan'
 import { createServer } from 'node:http'
+import path from 'path'
 import { Server } from 'socket.io'
 
 const PORT = process.env.PORT ?? 4321
@@ -26,13 +27,7 @@ io.on('connection', (socket) => {
 
 app.use(looger('dev'))
 
-app.get('/', (_, res) => {
-  res.sendFile(process.cwd() + '/client/index.html')
-})
-
-app.get('/style.css', (_, res) => {
-  res.sendFile(process.cwd() + '/client/style.css')
-})
+app.use(express.static(path.join(process.cwd(), 'client')))
 
 httpServer.listen(PORT, () => {
   console.log(`Server running on PORT ==> ${PORT}`)
